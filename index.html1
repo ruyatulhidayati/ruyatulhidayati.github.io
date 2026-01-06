@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wardah Blue Series | Skincare Rutinmu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-blue: #00a8d6;
+            --light-blue: #e0f7fa;
+            --white: #ffffff;
+            --text-dark: #333;
+            --accent-blue: #f0faff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, var(--white) 0%, var(--light-blue) 100%);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            padding: 1rem 5%;
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-blue);
+            letter-spacing: 2px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            color: var(--primary-blue);
+            margin-bottom: 10px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 25px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0,168,214,0.1);
+            border: 1px solid rgba(0,168,214,0.1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,168,214,0.2);
+        }
+
+        .product-img {
+            width: 100%;
+            height: 180px;
+            background: linear-gradient(to bottom right, var(--primary-blue), #81d4fa);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .price-tag {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--primary-blue);
+            margin: 10px 0;
+        }
+
+        .ingredients {
+            background: var(--accent-blue);
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 0.85rem;
+            text-align: left;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .ingredients strong {
+            color: var(--primary-blue);
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .btn-buy {
+            display: block;
+            background: var(--primary-blue);
+            color: white;
+            padding: 12px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-buy:hover {
+            background: #008cb3;
+            box-shadow: 0 5px 15px rgba(0,168,214,0.3);
+        }
+
+        .contact-section {
+            background: var(--primary-blue);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            margin-top: 60px;
+            border-radius: 50px 50px 0 0;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 2.5rem;
+            margin: 0 20px;
+            transition: 0.3s;
+        }
+
+        .social-links a:hover {
+            opacity: 0.8;
+            transform: scale(1.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: var(--primary-blue);
+            color: rgba(255,255,255,0.8);
+            border-top: 1px solid rgba(255,255,255,0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">WARDAH</div>
+        <div><i class="fas fa-shopping-cart" style="color: var(--primary-blue);"></i></div>
+    </header>
+
+    <section class="hero">
+        <h1>Crystal Secret Series</h1>
+        <p>Rahasia Kulit Sebening Kristal dengan Kandungan Edelweiss Extract</p>
+    </section>
+
+    <div class="container">
+        <div class="product-grid">
+            
+            <div class="card">
+                <div class="product-img">Foaming Cleanser</div>
+                <h3>Crystal Secret Foaming Cleanser</h3>
+                <div class="price-tag">Rp 37.000</div>
+                <div class="ingredients">
+                    <strong>Kandungan Utama:</strong>
+                    <ul>
+                        <li>Edelweiss Extract: Mencerahkan secara menyeluruh</li>
+                        <li>Natural AHA: Mengangkat sel kulit mati</li>
+                        <li>PHA: Menghaluskan tekstur kulit</li>
+                    </ul>
+                </div>
+                <a href="https://wa.me/628123456789?text=Halo,%20saya%20mau%20pesan%20Wardah%20Foaming%20Cleanser" class="btn-buy">Beli via WhatsApp</a>
+            </div>
+
+            <div class="card">
+                <div class="product-img">Brightening Day Cream</div>
+                <h3>Crystal Secret Day Cream</h3>
+                <div class="price-tag">Rp 105.000</div>
+                <div class="ingredients">
+                    <strong>Kandungan Utama:</strong>
+                    <ul>
+                        <li>SPF 35 PA+++: Proteksi dari sinar UV</li>
+                        <li>Alpha Arbutin: Meratakan warna kulit</li>
+                        <li>Niacinamide: Menyamarkan noda hitam</li>
+                    </ul>
+                </div>
+                <a href="https://wa.me/628123456789?text=Halo,%20saya%20mau%20pesan%20Wardah%20Day%20Cream" class="btn-buy">Beli via WhatsApp</a>
+            </div>
+
+            <div class="card">
+                <div class="product-img">Exfoliating Toner</div>
+                <h3>Crystal Secret Exfoliating Toner</h3>
+                <div class="price-tag">Rp 75.000</div>
+                <div class="ingredients">
+                    <strong>Kandungan Utama:</strong>
+                    <ul>
+                        <li>Natural AHA & PHA: Eksfoliasi lembut</li>
+                        <li>Allantoin: Menenangkan kulit</li>
+                        <li>Edelweiss Extract: Menjaga kelembapan</li>
+                    </ul>
+                </div>
+                <a href="https://wa.me/628123456789?text=Halo,%20saya%20mau%20pesan%20Wardah%20Toner" class="btn-buy">Beli via WhatsApp</a>
+            </div>
+
+        </div>
+    </div>
+
+    <section class="contact-section">
+        <h2>Konsultasi & Order</h2>
+        <p>Klik ikon di bawah untuk terhubung langsung:</p>
+        <div class="social-links">
+            <a href="https://wa.me/628123456789" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://instagram.com/username_anda" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com/username_anda" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Authorized Reseller Wardah - Nama Toko Anda</p>
+    </footer>
+
+</body>
+</html>
